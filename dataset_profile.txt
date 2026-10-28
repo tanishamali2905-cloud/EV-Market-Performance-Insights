@@ -1,0 +1,113 @@
+Rows: 100,000
+Columns: 37
+Duplicates: 0
+Missing cells: 9,511
+
+DATA TYPES
+vehicle_id                      object
+model_name                      object
+manufacturer                    object
+model_year                       int64
+manufacturing_country           object
+market_region                   object
+category                        object
+battery_capacity_kwh           float64
+battery_type                    object
+battery_cycle_life             float64
+battery_degradation_pct_5yr    float64
+range_km                       float64
+efficiency_wh_per_km           float64
+motor_power_kw                 float64
+torque_nm                      float64
+num_motors                       int64
+drivetrain                      object
+top_speed_kmph                 float64
+acceleration_0_100_sec         float64
+max_dc_charging_kw             float64
+charging_dc_fast_time_min      float64
+charging_ac_time_hr            float64
+num_charging_ports               int64
+num_seats                        int64
+weight_kg                      float64
+cargo_capacity_liters          float64
+price_usd                      float64
+insurance_cost_usd_yearly      float64
+warranty_years                   int64
+resale_value_pct_3yr           float64
+safety_rating_stars              int64
+autonomous_level                 int64
+infotainment_screen_inch       float64
+co2_saved_tons_per_year        float64
+annual_sales_units             float64
+customer_rating                float64
+recommended_use_case            object
+
+MISSING BY FIELD
+resale_value_pct_3yr           3057
+battery_cycle_life             2028
+customer_rating                1931
+infotainment_screen_inch       1506
+annual_sales_units              989
+manufacturing_country             0
+model_year                        0
+manufacturer                      0
+model_name                        0
+vehicle_id                        0
+market_region                     0
+battery_capacity_kwh              0
+category                          0
+motor_power_kw                    0
+torque_nm                         0
+num_motors                        0
+drivetrain                        0
+battery_type                      0
+battery_degradation_pct_5yr       0
+range_km                          0
+efficiency_wh_per_km              0
+charging_dc_fast_time_min         0
+max_dc_charging_kw                0
+acceleration_0_100_sec            0
+top_speed_kmph                    0
+charging_ac_time_hr               0
+num_charging_ports                0
+num_seats                         0
+weight_kg                         0
+warranty_years                    0
+insurance_cost_usd_yearly         0
+price_usd                         0
+cargo_capacity_liters             0
+autonomous_level                  0
+safety_rating_stars               0
+co2_saved_tons_per_year           0
+recommended_use_case              0
+
+NUMERIC SUMMARY
+                                count          mean           std      min         25%        50%         75%        max
+model_year                   100000.0   2022.004370      2.582955  2018.00   2020.0000   2022.000   2024.0000    2026.00
+battery_capacity_kwh         100000.0     78.233480     72.303712     1.50     32.2400     63.300    100.2625     410.00
+battery_cycle_life            97972.0   2072.446995    591.179721   500.00   1641.0000   2025.000   2481.0000    4375.00
+battery_degradation_pct_5yr  100000.0     12.293510      5.358706     2.00      8.4800     12.300     15.9800      36.14
+range_km                     100000.0    324.306958    146.090206    55.00    194.7000    338.300    437.2000     659.90
+efficiency_wh_per_km         100000.0    250.574575    306.327126     9.98    121.0600    165.180    228.5400    2242.84
+motor_power_kw               100000.0    169.862383    142.390387     1.50     53.1000    140.200    267.0000     750.00
+torque_nm                    100000.0    557.707859    698.808146    20.00    173.9000    332.400    627.7250    3999.80
+num_motors                   100000.0      1.352790      0.559296     1.00      1.0000      1.000      2.0000       3.00
+top_speed_kmph               100000.0    151.807542     59.612162    40.00    102.0000    160.800    187.5000     330.00
+acceleration_0_100_sec       100000.0      8.700617      4.776411     1.90      5.7800      7.550      9.9000      30.00
+max_dc_charging_kw           100000.0    152.233091    108.037664     3.00     65.7000    138.600    222.7000     350.00
+charging_dc_fast_time_min    100000.0     21.097953      7.555104     8.00     15.6000     20.100     25.7000      58.70
+charging_ac_time_hr          100000.0     11.276534      8.935065     0.30      4.4100      9.280     16.1000      30.00
+num_charging_ports           100000.0      1.150300      0.357367     1.00      1.0000      1.000      1.0000       2.00
+num_seats                    100000.0      6.226110      8.985368     1.00      3.0000      5.000      5.0000      65.00
+weight_kg                    100000.0   1247.316499    580.219143   231.00    907.1000   1142.700   1387.8000    4635.90
+cargo_capacity_liters        100000.0    440.643805    281.353638    15.00    258.7000    454.650    608.1000    2000.00
+price_usd                    100000.0  65010.461610  69808.409275   900.04  18161.9725  42808.695  87175.3900  409995.49
+insurance_cost_usd_yearly    100000.0   2085.775900   2334.779413    40.00    543.7250   1351.700   2670.6425   12000.00
+warranty_years               100000.0      5.003900      2.002400     2.00      3.0000      5.000      7.0000       8.00
+resale_value_pct_3yr          96943.0     53.067610     12.148942    15.00     44.8500     53.030     61.3500      90.00
+safety_rating_stars          100000.0      3.983390      0.721941     1.00      4.0000      4.000      4.0000       5.00
+autonomous_level             100000.0      2.244010      1.725033     0.00      1.0000      2.000      4.0000       5.00
+infotainment_screen_inch      98494.0     10.785731      3.769017     3.00      7.9000     11.000     14.0000      17.00
+co2_saved_tons_per_year      100000.0      3.689461      2.547954     0.95      2.1970      3.003      3.8450      13.30
+annual_sales_units            99011.0   7803.255436  13346.898509    10.00   1594.0000   3935.000   8904.5000  772442.00
+customer_rating               98069.0      4.084738      0.524394     1.75      3.7300      4.090      4.4700       5.00
